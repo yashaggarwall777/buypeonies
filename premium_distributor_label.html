@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: transparent;
+}
+
+.luxury-container {
+  background: linear-gradient(135deg, #E8DDF5 0%, #D4C5E2 100%);
+  color: #1a1a1a;
+  padding: 2.2rem 1.8rem;
+  max-width: 520px;
+  margin: 0 auto;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(90, 74, 138, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.luxury-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background: radial-gradient(ellipse at top right, rgba(255,255,255,0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.info-section {
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1.3rem 1.4rem;
+  border-radius: 5px;
+  border-left: 3px solid #5A4A8A;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  color: #5A4A8A;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.info-content {
+  line-height: 1.75;
+  font-size: 12.5px;
+  color: #2c2c2c;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.company-name {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 13.5px;
+  margin-bottom: 0.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.address-line {
+  color: #3c3c3c;
+  font-size: 12px;
+  line-height: 1.65;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.license-info {
+  font-size: 11px;
+  color: #666666;
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(90, 74, 138, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.divider {
+  height: 12px;
+  background: transparent;
+}
+
+.corner-accent {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  opacity: 0.1;
+}
+
+.corner-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid #5A4A8A;
+  border-left: 2px solid #5A4A8A;
+  border-radius: 6px 0 0 0;
+}
+
+.corner-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #5A4A8A;
+  border-right: 2px solid #5A4A8A;
+  border-radius: 0 0 6px 0;
+}
+</style>
+</head>
+<body>
+  <div class="luxury-container">
+    <div class="corner-accent corner-top-left"></div>
+    <div class="corner-accent corner-bottom-right"></div>
+
+    <div class="info-section">
+      <div class="section-label">Distributed By</div>
+      <div class="info-content">
+        <div class="company-name">Jindal General Store</div>
+        <div class="address-line">225, Tilak Bazar<br>Hisar — 125001<br>Haryana, India</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-section">
+      <div class="section-label">Manufactured By</div>
+      <div class="info-content">
+        <div class="company-name">Medi Dispo Private Limited</div>
+        <div class="address-line">Plot No. 360, Road No. 7<br>Kathwada GIDC<br>Tal. Daskroi, Dist. Ahmedabad<br>382 430 (Gujarat), India</div>
+        <div class="license-info">
+          <strong>Manufacturing License:</strong> GC/2135
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
